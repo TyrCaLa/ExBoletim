@@ -1,0 +1,10 @@
+{% extends "layout.html" %} {%block title%}Boletim{%endblock%} {%block body%}
+<table>
+  <th>Id</th>
+  <th>nome</th>
+  <th>email</th>
+  <th>telefone</th>
+  <th>matricula</th>
+</table>
+{{blet.id}} {{blet.nome}} {{blet.email}} {{blet.telefone}} {{blet.matricula}}
+{%endblock%}

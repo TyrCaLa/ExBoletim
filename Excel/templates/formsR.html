@@ -1,0 +1,37 @@
+{% extends "layout.html" %} {%block title%}{%endblock%} {%block body%}
+<link rel="stylesheet" href="{{url_for('static', filename='formlari.css')}}" />
+<div class="regist-box">
+  <form action="{{url_for('form_responsavel')}}" method="post">
+    <h2>Responsável</h2>
+    <div class="user-box">
+      <input type="text" name="nome" required="" />
+      <label>Nome</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="email" required="" />
+      <label>Email</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="tel" required="" />
+      <label>Telefone</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="matr" required="" />
+      <label>Matrícula</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="cpf" required="" />
+      <label>CPF</label>
+    </div>
+    <button>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Enviar
+    </button>
+    <a href="/form/aluno">A</a>
+  </form>
+</div>
+
+{%endblock%}
